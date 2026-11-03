@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Animation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'det8sfx',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Animation</h1>
+  </header>
+  <main>
+    <h2>フェードイン</h2>
+    <p class="fade">ゆっくりと文字を表示</p>
+
+    <h2>回転</h2>
+    <p class="spin">文字の回転</p>
+
+    <h2>色の変更</h2>
+    <p class="color">背景の色が変わる</p>
+
+    <h2>延びる背景</h2>
+    <p class="line">♡♡♡</p>
+
+    <h2>スライドイン</h2>
+    <p class="slide-in">下から上にスライド</p>
+
+  </main>
+  <footer>
+    <p>© SampleSite</p>
+  </footer>
+</body>
+
+</html>
